@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>COGS3 - Best of 10!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Let's Roll the Dice!</h1>
+    <h2>
+      If the dice adds to anything above 9, you win $5! <br>
+      If the dice adds to 5 or less, I win $5. <br>
+      Ready to play?
+    </h2>
+    <h3></h3>
+
+    <!-- Added input for the number of times to play and display for balance -->
+    <div>
+      <label for="numRolls">Number of Times to Play:</label>
+      <input type="number" id="numRolls" value="1" min="1">
+      <p>Balance: $<span id="balanceDisplay">0</span></p>
+      <button class="myBtn" onclick="playMultipleTimes()">Let's Play Again!</button>
+    </div>
+
+    <div class="dice">
+      <img class="img1" src="images/dice6.png">
+    </div>
+
+    <div class="dice">
+      <img class="img2" src="images/dice6.png">
+    </div>
+  </div>
+
+  <footer>
+    COGS3 - Dice Game Bet 10 - Serina Li - 11.27.23
+  </footer>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
+
